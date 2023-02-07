@@ -3,6 +3,8 @@ import 'package:flutter/rendering.dart';
 import 'package:new_app/share_profile.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'drawer.dart';
+
 class saved extends StatefulWidget {
   const saved({super.key});
 
@@ -83,6 +85,7 @@ class _savedState extends State<saved> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: drawer(),
       appBar: AppBar(
         title: Text('Preview'),
         backgroundColor: Colors.lightGreen.shade100,

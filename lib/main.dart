@@ -1,7 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:new_app/design_3.dart';
+import 'package:new_app/design_4.dart';
+import 'package:new_app/design_5.dart';
+import 'package:new_app/design_6.dart';
+import 'package:new_app/drawer.dart';
 import 'package:new_app/form.dart';
 import 'Splash_page.dart';
+import 'design_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,8 +30,16 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.lightGreen,
         textTheme: const TextTheme(
-          headline1:
-              TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          headline1: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Color.fromARGB(255, 0, 0, 0),
+            fontSize: 25,
+          ),
+          headline2: TextStyle(
+            fontWeight: FontWeight.w400,
+            color: Color.fromARGB(255, 0, 0, 0),
+            fontSize: 25,
+          ),
         ),
       ),
       home: SplashPage(),
@@ -46,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: drawer(),
       appBar: AppBar(
         backgroundColor: Colors.lightGreen.shade100,
         title: Container(
@@ -98,29 +113,128 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(
-                      bottom: 10,
-                      top: 30,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12.0),
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/design-2.png'),
-                        fit: BoxFit.contain,
+                  InkWell(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: ((context) {
+                          return design_2();
+                        })));
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(
+                          bottom: 10,
+                          top: 30,
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12.0),
+                          image: DecorationImage(
+                            image: AssetImage('assets/images/design-2.png'),
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      )),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return design_3();
+                      })));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        bottom: 10,
+                        top: 30,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/design-3.png'),
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(
-                      bottom: 10,
-                      top: 30,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return design_4();
+                      })));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        bottom: 10,
+                        top: 30,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/design-3.png'),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
                     ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12.0),
-                      image: DecorationImage(
-                        image: AssetImage('assets/images/design-3.png'),
-                        fit: BoxFit.contain,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return design_5();
+                      })));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        bottom: 10,
+                        top: 30,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/design-3.png'),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return design_4();
+                      })));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        bottom: 10,
+                        top: 30,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/design-3.png'),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return design_6();
+                      })));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        bottom: 10,
+                        top: 30,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/design-3.png'),
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
                   ),
