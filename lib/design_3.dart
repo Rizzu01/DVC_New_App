@@ -179,10 +179,13 @@ class _design_3State extends State<design_3> {
                           child: Container(
                             child: Row(
                               children: [
-                                Icon(
-                                  Icons.whatsapp,
-                                  color: Colors.white,
-                                  size: 40,
+                                Container(
+                                  width: 40,
+                                  height: 40,
+                                  child: Image.asset(
+                                    'assets/images/whatsapp.png',
+                                    color: Colors.white,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: 20,

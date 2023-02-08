@@ -170,19 +170,22 @@ Widget _buildWhatsapp() {
           ],
         ),
         Container(
-          height: 40,
-          width: 40,
-          decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: LinearGradient(colors: [
-                Color.fromARGB(255, 195, 227, 253),
-                Color.fromARGB(255, 255, 216, 213)
-              ], begin: Alignment.bottomLeft, end: Alignment.topRight)),
-          child: Icon(
-            Icons.whatsapp,
-            color: Colors.white,
-          ),
-        ),
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(colors: [
+                  Color.fromARGB(255, 195, 227, 253),
+                  Color.fromARGB(255, 255, 216, 213)
+                ], begin: Alignment.bottomLeft, end: Alignment.topRight)),
+            child: Container(
+              width: 40,
+              height: 40,
+              child: Image.asset(
+                'assets/images/whatsapp.png',
+                color: Colors.white,
+              ),
+            )),
       ]),
     ),
   );

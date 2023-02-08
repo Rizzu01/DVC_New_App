@@ -161,13 +161,9 @@ class _share_profileState extends State<share_profile> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      child: ElevatedButton.icon(
+                      child: ElevatedButton(
                           onPressed: (() {}),
-                          icon: Icon(
-                            Icons.whatsapp,
-                            color: Colors.white,
-                          ),
-                          label: Text(
+                          child: Text(
                             'Whatsapp',
                             style: TextStyle(color: Colors.white),
                           )),
@@ -205,7 +201,7 @@ class _share_profileState extends State<share_profile> {
                         backgroundColor: Colors.lightGreen.shade100),
                     onPressed: (() {}),
                     icon: Icon(
-                      Icons.whatsapp,
+                      Icons.ice_skating,
                       size: 35,
                     ),
                     label: Text(

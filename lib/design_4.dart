@@ -154,7 +154,7 @@ Widget _buildWhatsapp() {
           CircleAvatar(
             backgroundColor: Colors.lightGreen,
             child: Icon(
-              Icons.whatsapp,
+              Icons.tab,
               color: Colors.white,
             ),
           ),

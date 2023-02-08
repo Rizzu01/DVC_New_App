@@ -469,22 +469,26 @@ class _savedState extends State<saved> {
                                       //       0.32,
                                       // ),
                                       Container(
-                                        width:
-                                            MediaQuery.of(context).size.width *
-                                                0.07,
-                                        height:
-                                            MediaQuery.of(context).size.height *
-                                                0.06,
-                                        decoration: BoxDecoration(
-                                          color: Colors.green,
-                                          shape: BoxShape.circle,
-                                        ),
-                                        child: Icon(
-                                          Icons.whatsapp,
-                                          color: Colors.white,
-                                          size: 18,
-                                        ),
-                                      ),
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.07,
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              0.06,
+                                          decoration: BoxDecoration(
+                                            color: Colors.green,
+                                            shape: BoxShape.circle,
+                                          ),
+                                          child: Container(
+                                            width: 40,
+                                            height: 40,
+                                            child: Image.asset(
+                                              'assets/images/whatsapp.png',
+                                              color: Colors.white,
+                                            ),
+                                          )),
                                     ],
                                   ),
                                 ),

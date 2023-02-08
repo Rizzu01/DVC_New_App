@@ -4,6 +4,7 @@ import 'package:new_app/design_3.dart';
 import 'package:new_app/design_4.dart';
 import 'package:new_app/design_5.dart';
 import 'package:new_app/design_6.dart';
+import 'package:new_app/design_7.dart';
 import 'package:new_app/drawer.dart';
 import 'package:new_app/form.dart';
 import 'Splash_page.dart';
@@ -222,6 +223,27 @@ class _MyHomePageState extends State<MyHomePage> {
                       Navigator.push(context,
                           MaterialPageRoute(builder: ((context) {
                         return design_6();
+                      })));
+                    },
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        bottom: 10,
+                        top: 30,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        image: DecorationImage(
+                          image: AssetImage('assets/images/design-3.png'),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return design_7();
                       })));
                     },
                     child: Container(
